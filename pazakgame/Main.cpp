@@ -23,15 +23,26 @@ int main()
 	while (true)
 	{
 		player_one.play_round();
+		std::cout << "=================" << std::endl;
 		player_two.play_round();
 		if (player_one.field == 20)
 		{
-			std::cout << player_one.name << "WINS" << std::endl;
+			std::cout << player_one.name << " WINS!" << std::endl;
 			break;
 		}
 		if (player_two.field == 20)
 		{
-			std::cout << player_two.name << "WINS" << std::endl;
+			std::cout << player_two.name << " WINS!" << std::endl;
+			break;
+		}
+		if (player_one.field > 20)
+		{
+			std::cout << player_two.name << " WINS!" << std::endl;
+			break;
+		}
+		if (player_two.field > 20)
+		{
+			std::cout << player_one.name << " WINS!" << std::endl;
 			break;
 		}
 

@@ -35,7 +35,21 @@ public:
 		std::cout << "Choose which card to play: " << std::endl;
 		print_cards();
 		std::cin >> play;
-		field += cards[play];
+		switch (play)
+		{
+		case 1:
+			field += cards[0];
+			break;
+		case 2:
+			field += cards[1];
+			break;
+		case 3:
+			field += cards[2];
+			break;
+		case 4:
+			field += cards[3];
+			break;
+		}
 		std::cout << "Field now is: " << field << std::endl;
 	}
 };
