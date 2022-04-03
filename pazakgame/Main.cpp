@@ -5,6 +5,7 @@
 
 int main()
 {
+	int checkForWinner();
 
 	Player player_one;
 	Player player_two;
@@ -48,3 +49,4 @@ int main()
 
 	}
 }
+
